@@ -46,7 +46,7 @@ git branch -u origin/master
     - git rebase master 會基於 master 目前最後一次 commit 內容再把 b1 commit 的內容加上去
 
 
-
+- 測試 branch1
 
 
 
