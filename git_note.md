@@ -38,6 +38,26 @@ git branch -u origin/master
 
 ```git checkout br名稱```
 - 切換到該branch
+- 視窗中的檔案也會變化
+
+```git rebase```
+- 將某一支 branch 基於另一支 branch 的內容合併起來
+- 例如現在在 branch b1
+    - git rebase master 會基於 master 目前最後一次 commit 內容再把 b1 commit 的內容加上去
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
