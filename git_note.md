@@ -16,11 +16,14 @@
 - 本地端知道 remote 對應到遠端網址
 
 ```git push -u origin master```
-- 可以拆解成 ```
+- 可以拆解成 
+```
 git push origin master
 git checkout master
 git branch -u origin/master
 ```
+
+
 
 ```gitk --all```
 - GUI 看 branch 方便
