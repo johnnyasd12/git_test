@@ -1,6 +1,7 @@
 ﻿
 
-
+```git commit -am "訊息"```
+- 將所有未被 add **且曾經被 add 過的檔案** add 後 commit
 
 ```git reset HEAD-2```
 - 不要被 reset 誤導
@@ -14,18 +15,26 @@
 ```git remote add origin remote網址```
 - 本地端知道 remote 對應到遠端網址
 
+```git push -u origin master```
+- 可以拆解成 ```
+git push origin master
+git checkout master
+git branch -u origin/master
+```
 
 ```gitk --all```
 - GUI 看 branch 方便
 
+### Git Branch
 
+```git branch```
+- 查看 branch
 
+```git branch br名稱```
+- 新增 branch
 
-
-
-
-
-- master 修改測試
+```git checkout br名稱```
+- 切換到該branch
 
 
 
