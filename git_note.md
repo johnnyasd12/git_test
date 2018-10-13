@@ -1,4 +1,4 @@
-﻿
+﻿# Git note
 
 ```git commit -am "訊息"```
 - 將所有未被 add **且曾經被 add 過的檔案** add 後 commit
