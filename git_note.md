@@ -48,13 +48,12 @@ git branch -u origin/master
 - 例如現在在 branch b1
     - git rebase master 會基於 master 目前最後一次 commit 內容再把 b1 commit 的內容加上去
 
+    
+## Collaborator
 
-
-- 測試 master
-- 測試 branch1
-
-
-
+1. 點進 GitHub ropo 右上角 setting，左側的 Collaborators，加入 該user 的 username
+2. 該user git clone 該專案
+3. 該user 開新的branch
 
 
 
