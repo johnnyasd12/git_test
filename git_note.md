@@ -39,10 +39,10 @@ git branch -u origin/master
 ```git branch```
 - 查看 branch
 
-```git branch br名稱```
+```git branch <branch名稱>```
 - 新增 branch
 
-```git checkout br名稱```
+```git checkout <branch名稱>```
 - 切換到該branch
 - 視窗中的檔案也會變化
 
