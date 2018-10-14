@@ -56,6 +56,11 @@ git branch -u origin/master
 3. 該user 開新的branch
 
 
+```git pull origin <branch名稱>```
+- 將 remote 的 change 更新到 local端
+- 會自動 merge，因此可能要處理 conflict
+
+
 
 
 
