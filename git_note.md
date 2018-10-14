@@ -22,8 +22,11 @@ git push origin master
 git checkout master
 git branch -u origin/master
 ```
+- 參數 -u 等同於 --set-upstream，設定 upstream 可以**使分支開始追蹤指定的遠端分支**
 
 
+```git log -10```
+- 查看最近 10 筆 log
 
 ```gitk --all```
 - GUI 看 branch 方便
