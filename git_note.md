@@ -1,5 +1,8 @@
 ﻿# Git note_with tingenyeh
 
+```git add ```
+- 若file add完作修改，要再add一次!
+
 ```git commit -am "訊息"```
 - 將所有未被 add **且曾經被 add 過的檔案** add 後 commit
 
@@ -59,6 +62,11 @@ git branch -u origin/master
 ```git pull origin <branch名稱>```
 - 將 remote 的 change 更新到 local端
 - 會自動 merge，因此可能要處理 conflict
+- 在某branch上pull 下來會直接更動到目前branch
+
+```git push origin <branch名稱>```
+- 將要修改的檔案add commit 完之後，push該分支到remote
+- **盡量不要push master**，會覆蓋到remote的master.
 
 
 
