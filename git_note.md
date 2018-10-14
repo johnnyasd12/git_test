@@ -52,6 +52,7 @@ git branch -u origin/master
 
 - 測試 master
 - 測試 branch1
+- 測試 pull request by tingenyeh
 
 
 
