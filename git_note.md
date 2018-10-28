@@ -1,5 +1,17 @@
 ﻿# Git note_with tingenyeh
 
+## initialize
+
+```git init```
+- 初始化該 repository
+
+```git config --global user.name <GitHub 帳號>```
+```git config --global user.email <GitHub 信箱>```
+- 讓系統知道你的 GitHub 帳號
+- 也可以不要設 global，只在該 repository 作用，把 --global 刪掉即可
+- ```git config --global --unset-all user.name``` 可以把所有 global 的 user.name 刪掉
+
+
 ```git add ```
 - 若file add完作修改，要再add一次!
 
