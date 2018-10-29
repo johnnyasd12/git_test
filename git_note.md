@@ -1,6 +1,6 @@
 ﻿# Git note_with tingenyeh
 
-## initialize
+## Initialize
 
 ```git init```
 - 初始化該 repository
@@ -11,6 +11,10 @@
 - 也可以不要設 global，只在該 repository 作用，把 --global 刪掉即可
 - ```git config --global --unset-all user.name``` 可以把所有 global 的 user.name 刪掉
 
+```git config --global core.editor "'subl' --wait"```
+- 在使用 git commit 時，會預設 sublime 為 message 編輯器
+- --wait 是為了讓 git 等到編輯器 save 且關閉後才 commit
+- 要使用 vim 為預設則只要 ```git config --global core.editor "vim"``` 即可
 
 ```git add ```
 - 若file add完作修改，要再add一次!
@@ -26,6 +30,8 @@
 
 ```git diff```
 - 是**目前檔案(尚未add)** 和上次 commit 之間的差距
+
+## Remote 端
 
 ```git remote add origin remote網址```
 - 本地端知道 remote 對應到遠端網址
