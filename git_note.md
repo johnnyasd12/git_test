@@ -76,6 +76,9 @@ git branch -u origin/master
 ```git branch -d <branch名稱>```
 - 刪除 branch
 
+```git merge <branch名稱>```
+- 將某 branch 合併到目前 branch
+
 ```git rebase```
 - 將某一支 branch 基於另一支 branch 的內容合併起來
 - 例如現在在 branch b1
