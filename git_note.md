@@ -6,6 +6,7 @@
 - 初始化該 repository
 
 ```git config --global user.name <GitHub 帳號>```
+
 ```git config --global user.email <GitHub 信箱>```
 - 讓系統知道你的 GitHub 帳號
 - 也可以不要設 global，只在該 repository 作用，把 --global 刪掉即可
@@ -93,8 +94,10 @@ git branch -u origin/master
 
 
 
+# References
 
-
+[Git 教學(1) : Git 的基本使用](https://blog.gogojimmy.net/2012/01/17/how-to-use-git-1-git-basic/)
+[30 天精通 Git 版本控管](https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/zh-tw/README.md)
 
 
 
