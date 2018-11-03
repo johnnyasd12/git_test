@@ -20,6 +20,8 @@
 ```git config --list```
 - 查看當前 config 設定
 
+## 基本操作
+
 ```git add ```
 - 若file add完作修改，要再add一次!
 
@@ -84,7 +86,7 @@ git branch -u origin/master
 ```git pull origin <branch名稱>```
 - 將 remote 的 change 更新到 local端
 - 會自動 merge，因此可能要處理 conflict
-- 在某branch上pull 下來會直接更動到目前branch
+- 在某branch上pull 下來會直接更動到目前 branch
 
 ```git push origin <branch名稱>```
 - 將要修改的檔案 add commit 完之後，push 該分支到 remote
