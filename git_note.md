@@ -87,8 +87,8 @@ git branch -u origin/master
 - 在某branch上pull 下來會直接更動到目前branch
 
 ```git push origin <branch名稱>```
-- 將要修改的檔案add commit 完之後，push該分支到remote
-- **盡量不要push master**，會覆蓋到remote的master.
+- 將要修改的檔案 add commit 完之後，push 該分支到 remote
+- **盡量不要 push master**，會覆蓋到 remote 的 master.
 
 
 
@@ -96,8 +96,9 @@ git branch -u origin/master
 
 # References
 
-[Git 教學(1) : Git 的基本使用](https://blog.gogojimmy.net/2012/01/17/how-to-use-git-1-git-basic/)
-[30 天精通 Git 版本控管](https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/zh-tw/README.md)
+- [Git 教學(1) : Git 的基本使用](https://blog.gogojimmy.net/2012/01/17/how-to-use-git-1-git-basic/)
+- [30 天精通 Git 版本控管](https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/zh-tw/README.md)
+
 
 
 
