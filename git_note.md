@@ -16,6 +16,9 @@
 - --wait 是為了讓 git 等到編輯器 save 且關閉後才 commit
 - 要使用 vim 為預設則只要 ```git config --global core.editor "vim"``` 即可
 
+```git config --list```
+- 查看當前 config 設定
+
 ```git add ```
 - 若file add完作修改，要再add一次!
 
