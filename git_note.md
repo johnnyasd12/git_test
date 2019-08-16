@@ -38,6 +38,13 @@
 - 是**目前檔案(尚未add)** 和上次 commit 之間的差距
 - 可以指定檔案，使用 ```git diff <檔案名稱>``` 
 
+```git log -10```
+- 查看最近 10 筆 log
+
+```gitk --all```
+- GUI 看 branch 方便
+
+
 ## Remote 端
 
 ```git remote add origin remote網址```
@@ -52,12 +59,13 @@ git branch -u origin/master
 ```
 - 參數 -u 等同於 --set-upstream，設定 upstream 可以**使分支開始追蹤指定的遠端分支**
 
+```git remote -v```
+- 查看遠端版本的來源
 
-```git log -10```
-- 查看最近 10 筆 log
-
-```gitk --all```
-- GUI 看 branch 方便
+```git remote add <自訂分支名稱> <專案網址.git>```
+- 如果是 fork 來的 project，可以加入**原始來源**的版本控制
+- 例如 ```git remote add upstream https://github.com/Mindmapp/mindmapp.git```
+- 之後 ```git pull upstream master``` 就會把**原始來源**的 master 給 pull 下來
 
 ### Branch
 
