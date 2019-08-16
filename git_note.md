@@ -118,7 +118,7 @@ git branch -u origin/master
 
 - [Git 教學(1) : Git 的基本使用](https://blog.gogojimmy.net/2012/01/17/how-to-use-git-1-git-basic/)
 - [30 天精通 Git 版本控管](https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/zh-tw/README.md)
-
+- [Git - 更新 fork 出來的 repository](https://dotblogs.com.tw/explooosion/2018/08/09/025208)
 
 
 
