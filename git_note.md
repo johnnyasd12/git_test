@@ -1,4 +1,6 @@
-﻿# Git note_with tingenyeh
+Git note
+===
+
 
 ## Initialize
 
@@ -44,6 +46,8 @@
 ```gitk --all```
 - GUI 看 branch 方便
 
+```git stash```
+- 如果有尚未 commit 的變更，又想切 branch，就可以用這樣的 command 來儲存目前的狀態
 
 ## Remote 端
 
@@ -124,3 +128,19 @@ git branch -u origin/master
 
 
 
+
+
+
+
+# References
+
+- [Git 教學(1) : Git 的基本使用](https://blog.gogojimmy.net/2012/01/17/how-to-use-git-1-git-basic/)
+- [30 天精通 Git 版本控管](https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/zh-tw/README.md)
+
+
+
+
+
+
+
+###### tags: `coding`
