@@ -30,6 +30,13 @@ Git note
 ```git commit -am "訊息"```
 - 將所有未被 add **且曾經被 add 過的檔案** add 後 commit
 
+```git rm --cached filename```
+- 取消追蹤 file
+
+```git rm -r --cached foldername```
+- 取消追蹤 folder
+
+
 ```git reset HEAD-2```
 - 不要被 reset 誤導
 - 是 go to 的意思，前往兩個 commit 之前的狀態
@@ -48,28 +55,6 @@ Git note
 
 ```git stash```
 - 如果有尚未 commit 的變更，又想切 branch，就可以用這樣的 command 來儲存目前的狀態
-
-## Remote 端
-
-```git remote add origin remote網址```
-- 本地端知道 remote 對應到遠端網址
-
-```git push -u origin master```
-- 可以拆解成 
-```
-git push origin master
-git checkout master
-git branch -u origin/master
-```
-- 參數 -u 等同於 --set-upstream，設定 upstream 可以**使分支開始追蹤指定的遠端分支**
-
-```git remote -v```
-- 查看遠端版本的來源
-
-```git remote add <自訂分支名稱> <專案網址.git>```
-- 如果是 fork 來的 project，可以加入**原始來源**的版本控制
-- 例如 ```git remote add upstream https://github.com/Mindmapp/mindmapp.git```
-- 之後 ```git pull upstream master``` 就會把**原始來源**的 master 給 pull 下來
 
 ### Branch
 
@@ -98,12 +83,27 @@ git branch -u origin/master
     - git rebase master 會基於 master 目前最後一次 commit 內容再把 b1 commit 的內容加上去
 
 
-## Collaborator
+## Remote 端
 
-1. 點進 GitHub ropo 右上角 setting，左側的 Collaborators，加入 該user 的 username
-2. 該user git clone 該專案
-3. 該user 開新的branch
+```git remote add origin remote網址```
+- 本地端知道 remote 對應到遠端網址
 
+```git push -u origin master```
+- 可以拆解成 
+```
+git push origin master
+git checkout master
+git branch -u origin/master
+```
+- 參數 -u 等同於 --set-upstream，設定 upstream 可以**使分支開始追蹤指定的遠端分支**
+
+```git remote -v```
+- 查看遠端版本的來源
+
+```git remote add <自訂分支名稱> <專案網址.git>```
+- 如果是 fork 來的 project，可以加入**原始來源**的版本控制
+- 例如 ```git remote add upstream https://github.com/Mindmapp/mindmapp.git```
+- 之後 ```git pull upstream master``` 就會把**原始來源**的 master 給 pull 下來
 
 ```git pull origin <branch名稱>```
 - 將 remote 的 change 更新到 local端
@@ -114,6 +114,11 @@ git branch -u origin/master
 - 將要修改的檔案 add commit 完之後，push 該分支到 remote
 - **盡量不要 push master**，會覆蓋到 remote 的 master.
 
+### Collaborator
+
+1. 點進 GitHub ropo 右上角 setting，左側的 Collaborators，加入 該user 的 username
+2. 該user git clone 該專案
+3. 該user 開新的branch
 
 
 
@@ -123,19 +128,6 @@ git branch -u origin/master
 - [Git 教學(1) : Git 的基本使用](https://blog.gogojimmy.net/2012/01/17/how-to-use-git-1-git-basic/)
 - [30 天精通 Git 版本控管](https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/zh-tw/README.md)
 - [Git - 更新 fork 出來的 repository](https://dotblogs.com.tw/explooosion/2018/08/09/025208)
-
-
-
-
-
-
-
-
-
-# References
-
-- [Git 教學(1) : Git 的基本使用](https://blog.gogojimmy.net/2012/01/17/how-to-use-git-1-git-basic/)
-- [30 天精通 Git 版本控管](https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/zh-tw/README.md)
 
 
 
