@@ -36,12 +36,21 @@ Git note
 ```git rm -r --cached foldername```
 - 取消追蹤 folder
 
+```git reset 85e7e30```
+- 不要被 reset 誤導
+- 是 go to 的意思，前往 ```85e7e30``` 這個 commit
+
+```git reset e12d8ef^```
+- 是 go to 的意思，前往 ```e12d8ef``` 的前一個 commit
+- ```git reset e12d8ef^^``` 或 ```git reset e12d8ef~2``` 前往 ```e12d8ef``` 的前兩個 commit，依此類推
 
 ```git reset HEAD-2```
-- 不要被 reset 誤導
-- 是 go to 的意思，前往兩個 commit 之前的狀態
+- 是 go to 的意思，前往 HEAD 所在兩個 commit 之前的狀態
 - ```git reset HEAD``` 
-    - 回到 HEAD 的狀態(?)，將 stage 清空?
+    - 回到 HEAD 的狀態(?)，將 stage 清空? (那感覺跟直接 `git reset` 差不多?)
+
+```git reset```
+- This will unstage all files you might have staged with ```git add```
 
 ```git diff```
 - 是**目前檔案(尚未add)** 和上次 commit 之間的差距
@@ -55,6 +64,9 @@ Git note
 
 ```git stash```
 - 如果有尚未 commit 的變更，又想切 branch，就可以用這樣的 command 來儲存目前的狀態
+
+```git checkout [some_dir|file.txt]```
+- revert uncommitted changes only to particular file or directory
 
 ### Branch
 
@@ -112,11 +124,12 @@ git branch -u origin/master
 
 ```git push origin <branch名稱>```
 - 將要修改的檔案 add commit 完之後，push 該分支到 remote
-- **盡量不要 push master**，會覆蓋到 remote 的 master.
+- **盡量不要直接 push master**，會覆蓋到 remote 的 master.
+    - ***local 端開發，通常開新 branch，然後要上傳 remote 前先 pull master，然後把 branch merge 到 master，最後才 push origin master ??***
 
 ### Collaborator
 
-1. 點進 GitHub ropo 右上角 setting，左側的 Collaborators，加入 該user 的 username
+1. 點進 GitHub repo 右上角 setting，左側的 Collaborators，加入 該user 的 username
 2. 該user git clone 該專案
 3. 該user 開新的branch
 
@@ -128,7 +141,8 @@ git branch -u origin/master
 - [Git 教學(1) : Git 的基本使用](https://blog.gogojimmy.net/2012/01/17/how-to-use-git-1-git-basic/)
 - [30 天精通 Git 版本控管](https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/zh-tw/README.md)
 - [Git - 更新 fork 出來的 repository](https://dotblogs.com.tw/explooosion/2018/08/09/025208)
-
+- [在 git 中取消追蹤檔案 | Ignore tracked files in git](http://blog.ma.beibeilab.com/ignore-tracked-files/)
+- [【狀況題】剛才的 Commit 後悔了，想要拆掉重做… - 為你自己學 Git](https://gitbook.tw/chapters/using-git/reset-commit.html)
 
 
 
