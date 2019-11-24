@@ -117,6 +117,12 @@ git branch -u origin/master
 - 例如 ```git remote add upstream https://github.com/Mindmapp/mindmapp.git```
 - 之後 ```git pull upstream master``` 就會把**原始來源**的 master 給 pull 下來
 
+```git remote update```
+- 與 remote 端同步
+
+```git status -uno```
+- 檢查當前 branch 版本和 remote 端差異
+
 ```git pull origin <branch名稱>```
 - 將 remote 的 change 更新到 local端
 - 會自動 merge，因此可能要處理 conflict
